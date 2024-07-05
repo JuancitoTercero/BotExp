@@ -10,10 +10,7 @@ const baileys = require('@whiskeysockets/baileys')
  const fs = require("fs")
  const ws = require('ws')
 const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js')
-let panel = "https://www.cafirexos.com"
-let panel2 = "https://host.panel-infinitywa.store"
-let cafi = "https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q"
-let cafi2 = "https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ"
+let panel2 = "content://media/external/downloads/1000048656"
 
 async function info(command, conn, m, speed, sender, fkontak, pickRandom, pushname, from, msg, text) {
 if (global.db.data.users[m.sender].registered < true) return m.reply(info.registra)
@@ -50,14 +47,14 @@ let stateRun = `╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩
 ┊┗━━━━━━━━━━━━━━•
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⪩\n`.trim() //`
 let ments = [me]      
-conn.sendButton(m.chat, stateRun, `${conn.user.id == global.numBot2 ? '' : `\n\n${lenguaje.info.text11} wa.me/${global.numBot.split`@`[0]}`}`, pickRandom([img, img1, img2]), [['𝐌𝐄𝐍𝐔', `.help`], ['𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃', `.ping`]], null, [['𝐍𝐨𝐯𝐚𝐁𝐨𝐭-𝐌𝐃', `${pickRandom([nna, nn, md, yt])}`]], fkontak) 
+conn.sendButton(m.chat, stateRun, `${conn.user.id == global.numBot2 ? '' : `\n\n${lenguaje.info.text11} wa.me/${global.numBot.split`@`[0]}`}`, pickRandom([img, img1, img2]), [['𝐌𝐄𝐍𝐔', `.help`], ['𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃', `.ping`]], null, [['𝐁𝐨𝐭', `${pickRandom([nna, nn, md, yt])}`]], fkontak) 
 //conn.sendMessage(m.chat, {image: imagen1, caption: stateRun, contextInfo:{ mentionedJid:[sender]}}, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
 }
 
 if (command == 'owner' || command == 'creador' || command == 'contacto') {
 let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;PROPIETARIO/OWNER DEL BOT 👑;;;\nFN:OWNER\nORG:PROPIETARIO/OWNER DEL BOT 👑\nTITLE:\nitem1.TEL;waid=5492645589171:5492645589171\nitem1.X-ABLabel:PROPIETARIO/OWNER DEL BOT👑\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:PROPIETARIO/OWNER DEL BOT 👑\nEND:VCARD`
 let a = await conn.sendMessage(m.chat, { contacts: { displayName: 'ɴᴏᴠᴀʙᴏᴛ-ᴍᴅ 👑', contacts: [{ vcard }] }}, {quoted: m})
-await conn.sendButton(m.chat, `${lenguaje['smsWel']()} @${sender.split("@")[0]}, ${lenguaje.info.text12}\n`, botname, pickRandom([img, img1, img2]), [['𝐌𝐄𝐍𝐔', `.menu`], ['𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃', '.ping']], null, [['𝐆𝐈𝐓𝐇𝐔𝐁', `${md}`], ['𝐘𝐎𝐔𝐓𝐔𝐁𝐄', `${yt}`], ['𝐆𝐑𝐔𝐏𝐎𝐒', `${nn}`], ['𝐀𝐒𝐈𝐒𝐓𝐄𝐍𝐂𝐈𝐀', `${fb}`]], a)
+await conn.sendButton(m.chat, `${lenguaje['smsWel']()} @${sender.split("@")[0]}, ${lenguaje.info.text12}\n`, botname, pickRandom([img, img1, img2]), [['𝐌𝐄𝐍𝐔', `.menu`], ['𝐕𝐄𝐋𝐎𝐂𝐈𝐃𝐀𝐃', '.ping']], null, [['𝐘𝐎𝐔𝐓𝐔𝐁𝐄', `${yt}`], ['𝐆𝐑𝐔𝐏𝐎𝐒', `${nn}`], ['𝐀𝐒𝐈𝐒𝐓𝐄𝐍𝐂𝐈𝐀', `${fb}`]], a)
 //conn.sendMessage(m.chat, { text : `${lenguaje['smsWel']()} @${sender.split("@")[0]}, ${lenguaje.info.text12}\n\n${fb}`, mentions: [sender]}, { quoted: a, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
 }
 
