@@ -165,7 +165,7 @@ if (prefix == 'a' || prefix == 'A') return
 if (!text) return m.reply(`${lenguaje.lengua.ia} ${prefix + command} Recomienda un top 10 de películas de acción`) 
 try {
 conn.sendPresenceUpdate('composing', m.chat);
-let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por elrebelde21, tu seras NovaBot-MD`;
+let sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por elrebelde21, tu seras Sbot`;
 async function getOpenAIChatCompletion(texto) {
 const openaiAPIKey = global.openai_key;
 let chgptdb = global.chatgpt.data.users[m.sender];
@@ -188,7 +188,7 @@ if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text ==
 m.reply(botIA222.data.choices[0].text.trim());
 } catch {
 try {
-const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por elrebelde21, tu seras NovaBot-MD`
+const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por elrebelde21, tu seras SBot`
 const Empireapi1 = await fetch(`https://api.cafirexos.com/api/chatgpt?text=${text}&name=${m.name}&prompt=${syms1}`);
 const empireApijson1 = await Empireapi1.json();
 if (empireApijson1.resultado == 'error' || empireApijson1.resultado == '' || !empireApijson1.resultado) return XD; // causar error undefined para lanzar msg de error
@@ -403,7 +403,7 @@ operation = availableOperations[0];
 }
 const baseUrl = "https://inferenceengine.vyro.ai/" + operation + ".vyro";
 const formData = new FormData();
-formData.append("image", Buffer.from(imageData), {filename: "enhance_image_body.jpg", contentType: "image/jpeg"});
+formData.append("", Buffer.from(imageData), {filename: "", contentType: ""});
 formData.append("model_version", 1, {"Content-Transfer-Encoding": "binary", contentType: "multipart/form-data; charset=utf-8"});
 formData.submit({url: baseUrl, host: "inferenceengine.vyro.ai", path: "/" + operation, protocol: "https:", headers: {"User-Agent": "okhttp/4.9.3", Connection: "Keep-Alive", "Accept-Encoding": "gzip"}},
 function (err, res) {
