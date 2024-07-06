@@ -66,11 +66,6 @@ conn.sendMessage(m.chat, { text: `${lenguaje.info.text13}\n1) ${nn}\n2) ${nn2}\n
 
 if (command == 'instalarbot' || command == 'crearbot') {
 conn.sendMessage(m.chat, { text: lenguaje.info.text20(fb, md),
-contextInfo:{
-forwardedNewsletterMessageInfo: { 
-newsletterJid: '120363160031023229@newsletter', 
-serverMessageId: '', 
-newsletterName: 'INFINITY-WA 💫' },
 mentions: [sender], 
 forwardingScore: 9999999,
 isForwarded: true, 
@@ -79,7 +74,7 @@ isForwarded: true,
 "containsAutoReply": true,
 "title": wm,
 "body": pushname,
-"previewType": "PHOTO",
+"previewType": "",
 "thumbnailUrl": ``,
 "thumbnail": imagen1, 
 "sourceUrl": md}}},
@@ -99,53 +94,14 @@ m.reply(`${lenguaje.info.text22}`)
 }
 
 if (command == 'donar') {
-conn.sendMessage(m.chat, { text: lenguaje.info.text23(paypal) + `\n\n${lenguaje.info.text24}`, contextInfo:{ forwardedNewsletterMessageInfo: { newsletterJid: '120363160031023229@newsletter', serverMessageId: '',  newsletterName: 'INFINITY-WA 💫' }, mentions: [sender], forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "body": `Ayuda a mantener el bot activo`, "previewType": "PHOTO", thumbnail: imagen1, sourceUrl: md}}}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+conn.sendMessage(m.chat, { text: lenguaje.info.text23(paypal) + `\n\n${lenguaje.info.text24}`, mentions: [sender], forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "body": `Ayuda a mantener el bot activo`, "previewType": "PHOTO", thumbnail: imagen1, sourceUrl: md}}}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 
 if (command == 'solicitud') {
-conn.sendMessage(m.chat, { text: lenguaje.grupos.text8(md, yt, nn7, fb), contextInfo:{forwardedNewsletterMessageInfo: { newsletterJid: '120363160031023229@newsletter', serverMessageId: '',  newsletterName: 'INFINITY-WA 💫' }, forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": wm, "body": vs, "previewType": "VIDEO", thumbnail: imagen1, sourceUrl: pickRandom([nna, nn, md, yt])}}}, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
+conn.sendMessage(m.chat, { text: lenguaje.grupos.text8(md, yt, nn7, fb), forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": wm, "body": vs, "previewType": "VIDEO", thumbnail: imagen1, sourceUrl: pickRandom([nna, nn, md, yt])}}}, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 
 if (command == 'cuenta' || command == 'cuentaofc' || command == 'cuentaoficiales' || command == 'cuentas') {
-conn.sendMessage(m.chat, { text: `*🔰 ${lenguaje['smsWel']()}* @${sender.split("@")[0]} ${lenguaje['cuenta'](nna, md, yt, tiktok, fb)}`, contextInfo:{forwardedNewsletterMessageInfo: { newsletterJid: '120363160031023229@newsletter', serverMessageId: '',  newsletterName: 'INFINITY-WA 💫' }, mentionedJid:[sender], forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": ` ${wm}`, "body": ` ${vs}`, "previewType": "PHOTO", thumbnail: imagen1, sourceUrl: `${pickRandom([nna, nn, md, yt])}`}}}, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
+conn.sendMessage(m.chat, { text: `*🔰 ${lenguaje['smsWel']()}* @${sender.split("@")[0]} ${lenguaje['cuenta'](nna, md, yt, tiktok, fb)}`, serverMessageId, mentionedJid:[sender], forwardingScore: 9999999, isForwarded: true, "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "title": ` ${wm}`, "body": ` ${vs}`, "previewType": "PHOTO", thumbnail: imagen1, sourceUrl: `${pickRandom([nna, nn, md, yt])}`}}}, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})
 }
-
-if (command == 'infohost' || command == 'host') {
-conn.sendMessage(m.chat, { text: lenguaje.info.text27(nna, host, paypal, fb),
-contextInfo:{
-forwardedNewsletterMessageInfo: { 
-newsletterJid: '120363160031023229@newsletter', 
-serverMessageId: '', 
-newsletterName: 'INFINITY-WA 💫' },
-forwardingScore: 9999999,
-isForwarded: true, 
-"externalAdReply": {
-"showAdAttribution": true,
-"containsAutoReply": true,
-title: `🤖 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐘𝐖𝐀-𝐇𝐎𝐒𝐓 🤖`,
-body: `✅ Hosting de Calidad`,
-"previewType": "PHOTO",
-thumbnailUrl: 'https://qu.ax/EQTd.jpg', 
-"sourceUrl": pickRandom([nna, panel2, host, md])}}},
-{ quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
-
-if (command == 'cafirexos' || command == 'Cafirexos') {
-conn.sendMessage(m.chat, { text: lenguaje.info.text26,
-contextInfo:{
-forwardedNewsletterMessageInfo: {
-newsletterJid: '120363160031023229@newsletter', 
-serverMessageId: '',  
-newsletterName: 'INFINITY-WA 💫' },
-mentions: [sender], 
-forwardingScore: 9999999,
-isForwarded: true, 
-"externalAdReply": {
-"showAdAttribution": true,
-"containsAutoReply": true,
-title: `🔵 C A F I R E X O S 🔵`, 
-body: `✅ Hosting de Calidad`, 
-"previewType": "PHOTO",
-thumbnailUrl: 'https://grxcwmcwbxwj.objectstorage.sa-saopaulo-1.oci.customer-oci.com/n/grxcwmcwbxwj/b/cafirexos/o/logos%2Flogo_2.png', 
-"sourceUrl": pickRandom([nna, panel, cafi, cafi2, md, yt])}}},
-{ quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})}
 
 if (command == '5492266613038' || command == '593980586516' || command == '595975740803') {
 if (!args.join(" ")) return m.reply(lenguaje.info.text25)
@@ -157,20 +113,6 @@ conn.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.sender]
 }
 conn.sendMessage(m.chat, {text: teks + teks2 + teks1, mentions:[m.sender]}, {quoted:m})
 }
-
-if (command == 'sc') {
-let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
-let res = await fetch('https://api.github.com/repos/elrebelde21/NovaBot-MD')
-let json = await res.json()
-let txt = `			 *乂 B O T  -  S C R I P T 乂*\n\n`
-txt += `◦ *Nombre :* ${json.name}\n`
-txt += `◦ *Visitantes :* ${json.watchers_count}\n`
-txt += `◦ *Tamaños :* ${(json.size / 1024).toFixed(2)} MB\n`
-txt += `◦  *Tamaños :* ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n`
-txt += `◦  *Url* : ${json.html_url}\n\n`
-txt += `${json.forks_count} Forks · ${json.stargazers_count} Stars · ${json.open_issues_count} Issues\n\n`
-txt += res
-await conn.relayMessage(m.chat,  {requestPaymentMessage: {currencyCodeIso4217: 'INR', amount1000: '1000000000000', requestFrom: '0@s.whatsapp.net', noteMessage: {extendedTextMessage: {text: txt, contextInfo: {mentionedJid: [m.sender], externalAdReply: {showAdAttribution: true }}}}}}, {})}
 
 if (command == 'status' || command == 'velocidad') {
 const { performance } = require('perf_hooks') 
@@ -231,7 +173,7 @@ ${cpus[0] ? `\`❐ Uso total de CPU\`
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
 _Uso de núcleo(s) de CPU (${cpus.length} CPU central)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}`.trim()
-conn.sendButton(m.chat, botname, respon, pickRandom([img, img1, img2]), [['𝐌𝐄𝐍𝐔', `.menu`], ['𝐆𝐑𝐔𝐏𝐎𝐒', `.grupos`]], null, [['𝐍𝐨𝐯𝐚𝐁𝐨𝐭-𝐌𝐃', `${pickRandom([nna, nn, md, yt])}`]], m)
+conn.sendButton(m.chat, botname, respon, pickRandom([img, img1, img2]), [['𝐌𝐄𝐍𝐔', `.menu`], ['𝐆𝐑𝐔𝐏𝐎𝐒', `.grupos`]], null, [['𝐁𝐨𝐭', `${pickRandom([nna, nn, md, yt])}`]], m)
 //conn.sendFile(m.chat, imagen1, 'lp.jpg', respon, m, false, { contextInfo: { externalAdReply: {title: "𝘐𝘔𝘍𝘖𝘙𝘔𝘈𝘊𝘐𝘖𝘕 𝘈𝘊𝘌𝘙𝘊𝘈 𝘋𝘌𝘓 𝘉𝘖𝘛", body: "Click para entrar", sourceUrl: md, thumbnail: imagen3 }}})
 }//`
 
